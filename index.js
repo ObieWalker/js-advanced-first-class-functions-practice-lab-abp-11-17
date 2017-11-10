@@ -41,3 +41,11 @@ const totalRevenue = function(drivers){
   })
   return totalPay
 }
+
+const averageRevenue = function(drivers){
+  let average = 0
+  drivers.forEach(function(average){
+    average += average.revenue
+  })
+  return average/drivers.length
+}
