@@ -19,3 +19,8 @@ let newDrivers = [...drivers]
   });
   return newDrivers
 }
+const driversByName = function(){
+  let newDrivers = [...drivers]
+    newDrivers.sort()
+    return newDrivers  
+}
