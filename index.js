@@ -50,5 +50,5 @@ const averageRevenue = function(drivers){
     average += sum.revenue
     counter++
   })
-  return average
+  return average/l
 }
