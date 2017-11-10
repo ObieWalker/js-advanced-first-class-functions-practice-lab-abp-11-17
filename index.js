@@ -31,7 +31,13 @@ const driversByName = function(drivers){
         return 1
       }
       return 0
-
     });
     return newDrivers
+}
+const totalRevenue = function(drivers){
+  let totalPay = 0
+  drivers.forEach(function(sum){
+    totalPay +=  drivers.revenue
+  })
+  return totalPay
 }
