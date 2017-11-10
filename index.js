@@ -2,5 +2,5 @@
 const logDriverNames = function(driver){
   driver.forEach(function(log){
     console.log(log)
-  })
+  });
 }
