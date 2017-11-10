@@ -12,7 +12,7 @@ const logDriversByHometown = function(driver, location){
   });
 }
 const driversByRevenue = function (drivers){
-  let newDrivers = Object.assign({}, drivers)
+  let newDrivers = Object.assign({}, drivers.revenue)
   newDrivers.sort(function(a,b){
     return a - b
   });
