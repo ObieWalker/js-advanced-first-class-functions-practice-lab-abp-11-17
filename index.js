@@ -21,7 +21,17 @@ let newDrivers = [...drivers]
 }
 const driversByName = function(drivers){
   let newDrivers = [...drivers]
-    newDrivers.name.toLowerCase()
-    newDrivers.name.sort()
+    newDrivers.sort(function(a,b){
+      var nameA = a.name.toUpperCase();
+      var nameB = b.name.toUpperCase();
+      if(nameA< nameB){
+        return -1
+      }
+      if (nameA> nameB){
+        return 1
+      }
+      return 0
+
+    });
     return newDrivers
 }
