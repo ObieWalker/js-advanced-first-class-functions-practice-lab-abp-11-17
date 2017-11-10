@@ -19,8 +19,9 @@ let newDrivers = [...drivers]
   });
   return newDrivers
 }
-const driversByName = function(){
+const driversByName = function(drivers){
   let newDrivers = [...drivers]
-    newDrivers.sort()
-    return newDrivers  
+    newDrivers.name.toLowerCase()
+    newDrivers.name.sort()
+    return newDrivers
 }
