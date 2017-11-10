@@ -44,8 +44,6 @@ const totalRevenue = function(drivers){
 
 const averageRevenue = function(drivers){
   let l = drivers.length
-
-  let sum = 0
   let counter = 0
   drivers.forEach(function(sum){
     sum += sum.revenue
